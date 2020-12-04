@@ -4,13 +4,14 @@ import java.util.ArrayList;
 
 public class TriangleNumberCheck {
     public static void main(String[] args) {
-        long num = 10;
+        long num = 8;
         System.out.println(isTriangleNumber(num));
     }
 
     private static Boolean isTriangleNumber(long num) {
         int sum = 0;
         for (int i = 1; i < num; i++) {
+            System.out.println("value of i " + i);
             sum += i;
             System.out.println(sum);
             if(sum == num){

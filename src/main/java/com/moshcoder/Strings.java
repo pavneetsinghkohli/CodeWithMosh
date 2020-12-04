@@ -148,8 +148,8 @@ public class Strings {
         System.out.println(new_string);
 
 
-        char arr[] = new char[]{ 'a', ' ', ' ', ' ',
-                ' ', ' ', ' ', ' ' };
+        char arr[] = new char[]{'a', ' ', ' ', ' ',
+                ' ', ' ', ' ', ' '};
 
         str20.getChars(0, 2, arr, 3);
 
@@ -161,8 +161,21 @@ public class Strings {
 
         System.out.println(check);
 
-    }
+        String str22 = "The quick brown fox jumps over the lazy dog.";
+        String newStr22 = str22.replace("d", "God");
+        System.out.println(newStr22.toLowerCase().trim());
 
+        String str23 = "The";
+        int[] count = new int[256];
+
+        if(str22.startsWith(str23)){
+            System.out.println("True");
+        }else System.out.println("False");
+
+        System.out.println("charat " + count[str23.charAt(2)]);
+
+
+    }
 
 
     public static void test() {
